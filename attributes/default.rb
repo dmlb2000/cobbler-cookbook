@@ -25,3 +25,10 @@ default[:cobbler][:distro][:reserved_words][:bare_words] = ["--", "-amd64", "-bo
 default[:cobbler][:distro][:reserved_words][:arch] = ["i386" , "x86_64" , "ia64" , "ppc64",
      "ppc32", "ppc", "x86" , "s390x", "s390" , "386" , "amd", "arm"]
 default[:cobbler][:distro][:reserved_words][:separators] = ["-", "_", "."]
+
+default[:cobbler][:distro][:use_databags] = false
+default[:cobbler][:distro][:data_bag] = 'cobbler_distros'
+default[:cobbler][:profile][:use_databags] = false
+default[:cobbler][:profile][:data_bag] = 'cobbler_profiles'
+default[:cobbler][:repo][:use_databags] = false
+default[:cobbler][:repo][:data_bag] = 'cobbler_repos'
